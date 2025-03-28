@@ -11,5 +11,6 @@ abstract class AppColor {
   static const kSecondaryGrayColor = Color(0xffA0A0A0);
   static const kSubtitleColor = Color(0xff8D8D8D);
   static const kBackgroundButtonColor = Color(0xffdfdfdf);
+  static const kListTileBackGroundColor = Color(0xfff6f6f6);
 
 }

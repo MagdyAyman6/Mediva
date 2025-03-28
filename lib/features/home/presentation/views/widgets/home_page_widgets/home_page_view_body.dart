@@ -1,16 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:mediva/core/app_color.dart';
-import 'package:mediva/core/styles.dart';
-import 'package:mediva/core/widgets/custom_button.dart';
-import 'package:mediva/features/home/presentation/views/widgets/home_page_widgets/feature_item.dart';
 import 'package:mediva/features/home/presentation/views/widgets/home_page_widgets/feature_listview.dart';
-import 'package:mediva/features/home/presentation/views/widgets/home_page_widgets/quick_access_item.dart';
 import 'package:mediva/features/home/presentation/views/widgets/home_page_widgets/quick_access_listview.dart';
 import 'package:mediva/features/home/presentation/views/widgets/home_page_widgets/quick_access_text.dart';
 import 'package:mediva/features/home/presentation/views/widgets/home_page_widgets/your_health_insights_head.dart';
-import 'package:mediva/features/home/presentation/views/widgets/home_page_widgets/your_health_insights_item.dart';
 import 'package:mediva/features/home/presentation/views/widgets/home_page_widgets/your_health_insights_listview.dart';
-import '../../../../../../core/widgets/custom_container.dart';
 import 'head_line_row.dart';
 import 'tips_container.dart';
 

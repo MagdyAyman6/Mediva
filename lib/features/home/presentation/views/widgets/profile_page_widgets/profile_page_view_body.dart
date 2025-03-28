@@ -1,65 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:mediva/core/app_color.dart';
-import 'package:mediva/core/assets.dart';
-import 'package:mediva/core/styles.dart';
-import 'package:mediva/core/widgets/custom_button.dart';
+import 'package:mediva/features/home/presentation/views/widgets/profile_page_widgets/profile_page_head.dart';
+import 'package:mediva/features/home/presentation/views/widgets/profile_page_widgets/profile_page_list_tile_items.dart';
 
 class ProfilePageViewBody extends StatelessWidget {
   const ProfilePageViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        children: [
-          Text(
-            "Profile",
-            style: Styles.textStyle20.copyWith(
-              color: AppColor.kBlackColor,
-              fontWeight: FontWeight.w800,
-            ),
-          ),
-          Align(
-            alignment: Alignment.center,
-            child: Container(
-              margin: const EdgeInsets.only(top: 35),
-              width: 100,
-              height: 100,
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(AssetsData.profilePicture),
-                ),
-              ),
-            ),
-          ),
-          const SizedBox(height: 16),
-          Text(
-            "Unknown Person",
-            style: Styles.textStyle16.copyWith(
-              fontWeight: FontWeight.w700,
-            ),
-          ),
-          Text(
-            "unkownperson@gmail.com",
-            style: Styles.textStyle12.copyWith(
-              fontWeight: FontWeight.w400,
-            ),
-          ),
-          const SizedBox(height: 16),
-          CustomButton(
-            text: "Edit",
-            style: Styles.textStyle14.copyWith(
-              color: AppColor.kBlackColor,
-              fontWeight: FontWeight.w400,
-            ),
-            onTap: (){},
-            color: AppColor.kBackgroundButtonColor,
-            width: 70,
-            height: 32,
-            borderRadius: 24,
-          ),
-          const SizedBox(height: 32),
-        ],
+    return const Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            ProfilePageHead(),
+            SizedBox(height: 32),
+            ProfilePageListTileItems(),
+            SizedBox(height: 19),
+          ],
+        ),
       ),
     );
   }
